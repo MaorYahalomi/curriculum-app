@@ -5,6 +5,8 @@ RUN ls -l
 RUN npm install
 COPY curriculum-front ./
 RUN ls -l
+RUN nvm install 18
+RUN nvm use 18
 RUN npm run build
 COPY curriculum-front/nodeServer.js dist/nodeServer.js
 WORKDIR /usr/src/app/dist
