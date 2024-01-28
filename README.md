@@ -141,6 +141,8 @@ Color Palette:
 1. Form Page to create/update a curriculum
 1. User can delete a curriculum
 
+2. update01
+
 ## Version 1 Features
 
 1. Users can log in and save their curricula
