@@ -21,8 +21,8 @@ pipeline {
 
     stage('Log into Dockerhub') {
       environment {
-        DOCKERHUB_USER = 'maordockr89'
-        DOCKERHUB_PASSWORD = 'Docker12!sars'
+        DOCKERHUB_USER = ${{ secrets.DOCKER_USERNAME }}
+        DOCKERHUB_PASSWORD = ${{ secrets.DOCKER_PASSWORD }}
       }
       steps {
         sh 'docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASSWORD'
