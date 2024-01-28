@@ -25,7 +25,7 @@ pipeline {
         DOCKERHUB_USER = 'maordockr89'
       }
       steps {
-        sh 'docker login -u $DOCKERHUB_USER -p $DOCKER_CREDENTIALS"
+        sh 'docker login -u $DOCKERHUB_USER -p $DOCKER_CREDENTIALS'
       }
     }
 
